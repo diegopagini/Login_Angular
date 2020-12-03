@@ -1,1 +1,17 @@
-<p>login works!</p>
+<div class="login">
+  <form class="custom-form" method="POST">
+    <h1>Login</h1>
+    <input type="email"
+    [(ngModel)]="email"
+    name="email"
+    placeholder="Email"
+    required="required"
+    >
+    <input type="password"
+    [(ngModel)]="password"
+    placeholder="Password"
+    required="required"
+    >
+    <button type="submit" (click)="login()">Login</button>
+  </form>
+</div>
